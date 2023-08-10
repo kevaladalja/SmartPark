@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<style type="text/css">
+		
+		img{
+			position:relative;
+			top:0px;
+			left:50px;
+			border:1px solid black;
+			}
+			
+		#dp{
+			position:relative;
+			top:-30px;
+			left:80px;
+			font-size:25px;
+			padding:10px 0 0 0;
+			}
+			
+			#pp{
+			position:relative;
+			top:30px;
+			left:80px;
+			font-size:40px;
+			}
+		
+		</style>
+	</head>
+ 
+    <body>
+       <canvas id="c1" width="500" height="100">
+	   </canvas>
+	   <script type="text/javascript">
+		
+					var canvas =document.getElementById("c1");
+			if(canvas.getContext)
+			{
+				var ctx=canvas.getContext("2d");
+				ctx.fillStyle="blue";
+				ctx.fillRect(0,0,300,53);
+				ctx.beginPath();
+				ctx.font="28px Nirmala UI";
+				ctx.fillStyle="white";
+				ctx.fillText("ZONE STATUS",70,39);
+				ctx.stroke();
+			}
+			
+	   </script>
+	   <img src="Timage.jpg" height="690px" width="300px" align="left">
+	  </body>
+	  
+	  <p id="dp">total slot:9
+	   </p>
+	   
+	   
+	   <p id="dp">left vacant:2
+	   </p>
+	   
+	   
+	   <p id="dp">right vacant:1
+	   </p>
+	   
+	   
+	   <p id="dp">prize:30/hr
+	   </p>
+	   <a id="pp" href="payment.html">payment</a>
+	   
+	   
+	   
+	</body>
+	   
+</html>

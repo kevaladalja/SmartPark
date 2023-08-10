@@ -1,0 +1,58 @@
+
+<html>
+	<head>
+			<script>
+		function k(){
+						window.location.href="third.html"
+					}
+	</script>
+	</head>
+    <body align="center" >
+       <canvas id="c1" width="500" height="100">
+	   </canvas>
+	   <script type="text/javascript">
+			var canvas =document.getElementById("c1");
+			if(canvas.getContext)
+			{
+				var ctx=canvas.getContext("2d");
+				ctx.fillStyle="grey";
+				ctx.fillRect(100,10,300,70);
+				ctx.beginPath();
+				ctx.font="23px Nirmala UI";
+				ctx.fillStyle="yellow";
+				ctx.fillText("PARKING MANAGMENT",130,51);
+				ctx.stroke();
+			}
+	   
+		
+		
+	   </script>
+
+	   <form>
+            <table align="center" bgcolor="skyblue" border="3" width="20%" height="20%">
+          <th>
+           LOGIN IN
+          </th>
+                    <tr>
+                        <td>
+                            username:<input type="text">
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            password:<input type="password">
+                        </td>
+                    </tr>
+					<tr>
+						<th align="center">
+							<button="submit" onclick="k()">submit</button>
+						</th>
+					</tr>
+                </table>
+
+
+
+        </form>
+    </body>
+</html>
